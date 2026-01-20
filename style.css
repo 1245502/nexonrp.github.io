@@ -4,14 +4,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 
-    /* FUNDO COM A IMAGEM DO SERVIDOR */
-    background-image: url("https://raw.githubusercontent.com/1245502/nexonrp.github.io/main/nexon.png.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* REALCE SUAVE DAS CORES DA IMAGEM */
-    filter: saturate(1.15) contrast(1.05);
+    /* FUNDO PRETO PRA DESTACAR O NEON */
+    background-color: #000000;
 }
 
 .container {
@@ -21,7 +15,7 @@ body {
     text-align: center;
 }
 
-/* TÍTULO PRINCIPAL COM NEON */
+/* TÍTULO PRINCIPAL COM NEON VERMELHO */
 h1 {
     font-size: 64px;
     margin-bottom: 10px;
@@ -64,11 +58,10 @@ h2 {
 
 /* CAIXAS DE CONTEÚDO */
 .box {
-    background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(2px);
+    background: rgba(20, 20, 20, 0.9);
     padding: 20px;
     margin-bottom: 25px;
-    border-left: 4px solid rgba(180, 0, 0, 0.7);
+    border-left: 4px solid #ff0000;
     border-radius: 6px;
 }
 
