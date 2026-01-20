@@ -4,7 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 
-    /* FUNDO USANDO A PRÓPRIA IMAGEM */
+    /* FUNDO COM A IMAGEM DO SERVIDOR */
     background-image: url("https://raw.githubusercontent.com/1245502/nexonrp.github.io/main/nexon.png.png");
     background-size: cover;
     background-position: center;
@@ -21,11 +21,37 @@ body {
     text-align: center;
 }
 
-/* TÍTULO PRINCIPAL */
+/* TÍTULO PRINCIPAL COM NEON */
 h1 {
-    font-size: 56px;
+    font-size: 64px;
     margin-bottom: 10px;
     color: #ffffff;
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 5px #ff1a1a,
+        0 0 10px #ff1a1a,
+        0 0 20px #ff0000,
+        0 0 40px #cc0000,
+        0 0 60px #990000;
+
+    animation: neonPulse 1.5s infinite alternate;
+}
+
+/* ANIMAÇÃO DO NEON */
+@keyframes neonPulse {
+    from {
+        text-shadow:
+            0 0 5px #ff1a1a,
+            0 0 10px #ff1a1a,
+            0 0 20px #ff0000;
+    }
+    to {
+        text-shadow:
+            0 0 10px #ff1a1a,
+            0 0 25px #ff0000,
+            0 0 50px #cc0000;
+    }
 }
 
 /* SUBTÍTULO */
